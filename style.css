@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('backgroundbot.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.089);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 
+    -1px -1px 0 #7700ff, /* Sombra superior esquerda */
+    1px -1px 0 #000,  /* Sombra superior direita */
+    -1px 1px 0 #000,  /* Sombra inferior esquerda */
+    1px 1px 0 #000;   /* Sombra inferior direita */
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    text-shadow: 
+    -1px -1px 0 #000, /* Sombra superior esquerda */
+    1px -1px 0 #000,  /* Sombra superior direita */
+    -1px 1px 0 #000,  /* Sombra inferior esquerda */
+    1px 1px 0 #000;   /* Sombra inferior direita */
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #2600ff;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.feature {
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid rgb(76, 0, 255);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.459);
+}
+
+.feature h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.image-container {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: 250px;
+    border: 1px solid rgb(0, 217, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: url('background-mobile.jpg') no-repeat center center/cover;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .feature, .image-container {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
