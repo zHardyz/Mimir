@@ -20,31 +20,21 @@ body {
     max-width: 800px;
     width: 100%;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.089);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
 }
 
 h1 {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 10px;
-    text-shadow: 
-    -1px -1px 0 #7700ff, /* Sombra superior esquerda */
-    1px -1px 0 #000,  /* Sombra superior direita */
-    -1px 1px 0 #000,  /* Sombra inferior esquerda */
-    1px 1px 0 #000;   /* Sombra inferior direita */
+    margin-bottom: 15px;
 }
 
 p {
     font-size: 1rem;
-    margin: 10px 0 20px;
-    text-shadow: 
-    -1px -1px 0 #000, /* Sombra superior esquerda */
-    1px -1px 0 #000,  /* Sombra superior direita */
-    -1px 1px 0 #000,  /* Sombra inferior esquerda */
-    1px 1px 0 #000;   /* Sombra inferior direita */
+    margin-bottom: 20px;
 }
 
 .button {
@@ -58,7 +48,7 @@ p {
     border: none;
     border-radius: 8px;
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.3s ease;
 }
 
 .button:hover {
@@ -76,20 +66,15 @@ p {
 .feature {
     flex: 1 1 calc(33.33% - 20px);
     min-width: 200px;
-    padding: 10px;
-    border: 1px solid rgb(76, 0, 255);
+    padding: 15px;
+    border: 1px solid #4c00ff;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.459);
+    background: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.feature h3 {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-
-.feature p {
-    font-size: 0.9rem;
-    line-height: 1.4;
+.feature:hover {
+    transform: translateY(-5px);
 }
 
 .images {
@@ -103,10 +88,8 @@ p {
 .image-container {
     flex: 1 1 calc(33.33% - 20px);
     max-width: 250px;
-    border: 1px solid rgb(0, 217, 255);
     border-radius: 10px;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -114,30 +97,22 @@ p {
     width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-    body {
-        background: url('background-mobile.jpg') no-repeat center center/cover;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
     .feature, .image-container {
         flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .container {
-        padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .button {
