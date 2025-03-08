@@ -1,48 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="light">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bot Discord - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Mimir IA - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <button id="theme-toggle">
-        <i class="fas fa-sun"></i>
-    </button>
-    <div class="container">
-        <h1>IA no Discord e Telegram - MIMIR</h1>
-        <p>A Mimir está em desenvolvimento e será capaz de auxiliar como uma verdadeira assistente IA.</p>
-        <div class="features">
-            <div class="feature">
-                <h3>Disponibilidade</h3>
-                <p>Atualmente disponível apenas no Discord, mas futuramente poderá estar disponivel ao telegram</p>
-            </div>
-            <div class="feature">
-                
-                <h3>Meta</h3>
-                <p>Visão futura: Ver, falar e comentar o que acontece, com uma personalidade única. (futuramente algumas ideias podem mudar.)</p>
-            </div>
-            <div class="feature">
-                <h3>Integrações</h3>
-                <p>Poderá ser integrada a redes sociais e ao próprio desktop.</p>
-            </div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-logo">
+            <div class="preloader-circle"></div>
         </div>
-        <div class="images">
-            <div class="image-container">
-                <img src="design1.png" alt="Preview 1">
-            </div>
-            <div class="image-container">
-                <img src="design2.png" alt="Preview 2">
-            </div>
-            <div class="image-container">
-                <img src="jarviss.jpg" alt="Preview 3">
-            </div>
-        </div>
-        <a href="#" class="button">Saiba Mais</a>
     </div>
+
+    <button id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+    
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>MIMIR</h1>
+                <p class="subtitle">Uma IA diferente, com personalidade única</p>
+                <p class="description">Do Discord para o WhatsApp, conversando de maneira informal e autêntica</p>
+                <p class="status">Em desenvolvimento</p>
+            </div>
+            <div class="hero-image">
+                <img src="imagens de mimir/Default_Fullbody_illustration_of_Mimir_a_melancholic_animeinsp_0_313d6555-7eaa-4da1-91be-9243c78359f1_0.jpg" alt="Mimir IA">
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Quem é Mimir?</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Mimir é uma IA que começou no Discord, desenvolvida inicialmente com Python e agora disponível no WhatsApp usando Node.js.</p>
+                    <p>Diferente de outras IAs, Mimir conversa de maneira informal, não se segura nas palavras e é capaz de mudar de humor. Mesmo não sendo a melhor em matemática ou humanas, ela continua aprendendo e pode auxiliar em diversas tarefas ou simplesmente conversar por diversão.</p>
+                </div>
+                <div class="about-image">
+                    <img src="imagens de mimir/Default_A_highly_detailed_surreal_and_abstract_illustration_of_2_0c14e68a-af48-457f-accf-16fad4d0f48c_0.jpg" alt="Mimir Conceito">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section features-section">
+        <div class="container">
+            <h2>Características</h2>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-comments"></i>
+                    <h3>Conversas Naturais</h3>
+                    <p>Mimir conversa de forma natural e informal, como se fosse uma amiga próxima.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-brain"></i>
+                    <h3>Personalidade Única</h3>
+                    <p>Com humor variável e autenticidade, Mimir não é uma IA comum e previsível.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Multiplataforma</h3>
+                    <p>Disponível no Discord e WhatsApp, com planos para expansão para outras plataformas.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Aprendizado Contínuo</h3>
+                    <p>Mimir está sempre aprendendo e evoluindo através das interações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section gallery-section">
+        <div class="container">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="imagens de mimir/Default_Fullbody_illustration_of_Mimir_a_melancholic_animeinsp_0_4f927f24-f4e2-4ceb-b352-011a6c5888ea_0.jpg" alt="Mimir Ilustração">
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens de mimir/Default_A_highly_detailed_surreal_and_abstract_illustration_of_2_c8613715-7c06-4de5-b930-c9bd84881b73_0.jpg" alt="Mimir Conceito Abstrato">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-section">
+        <div class="container">
+            <h2>Mimir em Desenvolvimento</h2>
+            <p>Mimir está atualmente em fase de desenvolvimento, com foco principal na plataforma WhatsApp. Em breve, você poderá experimentar como uma IA pode ser diferente, divertida e útil ao mesmo tempo.</p>
+            <div class="development-status">
+                <div class="status-item">
+                    <i class="fas fa-code"></i>
+                    <p>Em Desenvolvimento</p>
+                </div>
+                <div class="status-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>Foco no WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mimir IA - Uma experiência diferente de inteligência artificial</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
