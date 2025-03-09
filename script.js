@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Observar elementos para animação
-    document.querySelectorAll('.feature, .gallery-item, .about-content, .hero-text, .hero-image, .status-item, .development-status').forEach(el => {
+    document.querySelectorAll('.feature, .gallery-item, .about-content, .hero-text, .hero-image, .status-item, .development-status, .instagram-container, .instagram-icon, .instagram-info').forEach(el => {
         el.classList.add('animate-ready');
         observer.observe(el);
     });
